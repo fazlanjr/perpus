@@ -148,6 +148,11 @@ class PeminjamanPetugasController extends Controller
             $detailid = uniqid('pinjam_', true);
             Detail::create(['id' => $detailid]);
             for ($i = 0; $i < count($request->data); $i++) {
+                $stok =   Buku::select('*')->where('id_buku', $request->data[$i]['id_buku'])->first();
+                if ($stok['stok_buku'] < 1) {
+                    return response()->json(['stok buku ini sudah habis!'], 400);
+                }
+                Buku::find($request->data[$i]['id_buku'])->decrement('stok_buku');
                 $p =  Pinjam::create([
                     'id_siswa' => $request->id_siswa,
                     'id_buku' => $request->data[$i]['id_buku'],
@@ -156,7 +161,6 @@ class PeminjamanPetugasController extends Controller
 
                 ]);
 
-                Buku::find($request->data[$i]['id_buku'])->decrement('stok_buku');
 
                 Riwayat::create([
                     'id_siswa' => $request->id_siswa,
