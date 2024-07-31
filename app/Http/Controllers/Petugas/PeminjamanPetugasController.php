@@ -88,7 +88,7 @@ class PeminjamanPetugasController extends Controller
             ->select('siswa.*', 'kelas.jenis_kelas')
             ->where('siswa.barcode', $barcode);
         $s = $siswa->first();
-        if ($s->count() < 1) {
+        if (!$s) {
             return back()->with('fail', 'Mohon Maaf Data Siswa Tidak Di Temukan');
         }
         $dipinjam = Pinjam::join('siswa AS s', 'pinjambuku.id_siswa', '=', 's.id_siswa')->select()->where('pinjambuku.id_siswa', '=', $s->id_siswa)->get()->count();
