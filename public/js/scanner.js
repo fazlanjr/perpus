@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.createElement("audio");
+    audio.src = "/beep.mp3";
+    console.log(audio);
     async function startScanner() {
         codeReader = new ZXing.BrowserBarcodeReader();
 
@@ -24,8 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 result
             );
             document.getElementById("barcodeinput").value = result.text;
+            audio.play();
             setTimeout(() => {
-                form.submit()
+                form.submit();
             }, 500);
         } catch (err) {
             console.error(err);

@@ -16,7 +16,7 @@
         <div class="row">
             <div class="about-info">
                 <div class="col-md-6 thumb">
-                    <img src="/perpus/logo.png" alt="Thumb" class="text-center">
+                    <img src="/logo.png" alt="Thumb" class="text-center">
                 </div>
                 <div class="col-md-6 info">
                     <h5>Profile Perpustakaan</h5>
