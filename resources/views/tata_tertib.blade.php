@@ -33,11 +33,12 @@
                                      yang harus Di Patuhi Oleh Seluruh Siswa {{ config('app.sekolah') }}
                                    </p>
                                     <ul>
-                                        <li>Siswa Di Wajibkan Mendaftarkan Diri Sebagai Anggota Perpustakaan</li>
-                                        <li>Telah Mengembalikan Semua Buku Yang Di Pinjam Sebelumnya</li>
-                                        <li>Memberikan Buku dan Kartu Anggota Kepada Petugas Perpustakaan Untuk Proses Peminjaman</li>
-                                        <li>Siswa Hanya Dapat Meminjam Maksimal 3 Buku </li>
-                                        <li>Dilarang Bagi Siswa Yang Meminjam Buku untuk Mencoret, Menyobek, atau Menghilangkan Buku Yang Di Pinjam</li>
+                                        <li>Peminjam Harus Memiliki Kartu Tanda Anggota Perpustakaan</li>
+                                        <li> Peminjam (Siswa, Guru Dan Pegawai) Hanya Boleh Meminjam Dua Buku Dalam Satu Minggu</li>
+                                        <li> Peminjam Diwajibkan Memelihara Kebersihan Dan Kebersihan Dan Keutuhan Buku</li>
+                                        <li>Peminjam Harus Mengembalikan Buku Sesuai Dengan Perpustakaan Sesuai Dengan Waktu Yang Telah Ditentukan </li>
+                                        <li>Keterlambatan Pengembalian Buku Akan Di Kenakan Denda Sebesar Rp 500 Per Buku Dalam Satu Hari</li>
+                                        <li> Apabila Buku Rusak Atau Hilang, Peminjam Dikenakan Sanksi Mengganti Dengan Buku Yang Sama Atau Mengganti Dengan Harga Buku</li>
                                     </ul>
                                 </div>
                             </div>
@@ -57,10 +58,16 @@
                                          yang wajib di patuhi oleh seluruh siswa / anggota Perpustakaan {{ config('app.sekolah') }}
                                     </p>
                                     <ul>
-                                        <li>Membawa Kartu Anggota Perpustakaan dan Membawa Buku yang akan di Kembalikan</li>
-                                        <li>Buku Dalam Keadaan Baik dan Tidak di Coret - Coret</li>
-                                        <li>Keterlambatan Pengembalian Akan Di Kenakan Denda Rp 1.000  Perhari</li>
-                                        <li>Menghilangkan Buku Akan Di Denda Rp 50.000 PerBuku yang hilang</li>
+                                        <li>Waktu Kunjungan dilaksanakan Setiap Hari Pukul 07:30 s.d 15:30</li>
+                                        <li>Alas Kaki Hatus dilepas Sebelum Memasuki Perpustakaan</li>
+                                        <li>Setiap Pengunjung diwajibkan Mengisi Buku Kunjungan</li>
+                                        <li>Buku yang Telah Selesai dibaca Harus dikembalikan Ke Tempat Semula </li>
+                                        <li>Dilarang Merokok Dalam Perpustakaan</li>
+                                        <li>Jangan Tidur Dalam Perpustakaan</li>
+                                        <li>Pengunjung Dapat Menjaga Kebersihan dan Kenyamanan Perpustakaan</li>
+                                        <li>Pengunjung dilarang Merusak apa Pun dari Perpustakaan </li>
+                                        <li>Jangan Mengambil apa Pun di Perpustakaan Kecuali Ilmu</li>
+                                        <li>Pengunjung Wajib Mematuhi Segala Peraturan dan Tata Tertib yang Telah ditentukan</li>
                                     </ul>
                                 </div>
                             </div>

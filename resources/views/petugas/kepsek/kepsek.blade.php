@@ -36,7 +36,7 @@
                                         control_point
                                     </span>
                                 </span>
-                                <span class="btn-text">Tambah Data Kepal Perpustakaan</span>
+                                <span class="btn-text">Tambah Data Kepala Perpustakaan</span>
                             </button>
                         </p>
                     @endif
@@ -56,21 +56,21 @@
                                     <div class="modal-body">
                                         <div class="mb-2">
                                             <div class="form-group">
-                                                <label for="validationCustom01">Nomor Induk Kepal Perpustakaan</label>
+                                                <label for="validationCustom01">Nomor Induk Kepala Perpustakaan</label>
                                                 <input type="number" class="form-control" name="nip_kepsek"
                                                     id="validationCustom01" placeholder="Nomor Induk" required>
                                             </div>
                                         </div>
                                         <div class="mb-2">
                                             <div class="form-group">
-                                                <label for="validationCustom01">Nama Lengkap Kepal Perpustakaan</label>
+                                                <label for="validationCustom01">Nama Lengkap Kepala Perpustakaan</label>
                                                 <input type="text" class="form-control" name="nama_kepsek"
-                                                    id="validationCustom01" placeholder="Nama Kepal Perpustakaan" required>
+                                                    id="validationCustom01" placeholder="Nama Kepala Perpustakaan" required>
                                             </div>
                                         </div>
                                         <div class="mb-2">
                                             <div class="form-group">
-                                                <label for="validationCustom01">Jenis Kelamin Kepal Perpustakaan</label>
+                                                <label for="validationCustom01">Jenis Kelamin Kepala Perpustakaan</label>
                                                 <select class="form-control custom-select" name="jenis_kelamin_kepsek">
                                                     <option value="l" selected>Laki - Laki</option>
                                                     <option value="p">Perempuan</option>
@@ -79,14 +79,14 @@
                                         </div>
                                         <div class="mb-2">
                                             <div class="form-group">
-                                                <label for="validationCustom01">Tanggal Lahir Kepal Perpustakaan</label>
+                                                <label for="validationCustom01">Tanggal Lahir Kepala Perpustakaan</label>
                                                 <input type="date" class="form-control" name="tgl_lahir_kepsek"
                                                     id="validationCustom01" required>
                                             </div>
                                         </div>
                                         <div class="mb-2">
                                             <div class="form-group">
-                                                <label for="validationCustom01">Foto Kepal Perpustakaan</label>
+                                                <label for="validationCustom01">Foto Kepala Perpustakaan</label>
                                                 <input type="file" id="input-file-now" name="foto_kepsek" class="dropify" required />
                                             </div>
                                         </div>
@@ -94,7 +94,7 @@
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
                                         <button class="btn btn-success" type="submit">Simpan
-                                            Data Kepal Perpustakaan</button>
+                                            Data Kepala Perpustakaan</button>
                                     </div>
                                 </form>
                             </div>
@@ -108,7 +108,7 @@
                                     <table class="table table-sm mb-0">
                                         <thead>
                                             <tr>
-                                                <th>Nomor Induk Pegawai Kepal Perpustakaan</th>
+                                                <th>Nomor Induk</th>
                                                 <th>Nama Lengkap</th>
                                                 <th>Jenis Kelamin</th>
                                                 <th>Tanggal Lahir</th>
@@ -171,21 +171,21 @@
                                                                     <div class="modal-body">
                                                                         <div class="mb-2">
                                                                             <div class="form-group">
-                                                                                <label for="validationCustom01">Nomor Induk Kepal Perpustakaan</label>
+                                                                                <label for="validationCustom01">Nomor Induk Kepala Perpustakaan</label>
                                                                                 <input type="number" class="form-control" name="nip_kepsek" value="{{ $data->nip_kepsek }}"
                                                                                     id="validationCustom01" placeholder="Nomor Induk" required>
                                                                             </div>
                                                                         </div>
                                                                         <div class="mb-2">
                                                                             <div class="form-group">
-                                                                                <label for="validationCustom01">Nama Lengkap Kepal Perpustakaan</label>
+                                                                                <label for="validationCustom01">Nama Lengkap Kepala Perpustakaan</label>
                                                                                 <input type="text" class="form-control" name="nama_kepsek"
-                                                                                    id="validationCustom01" placeholder="Nama Kepal Perpustakaan" value="{{ $data->nama_kepsek }}" required>
+                                                                                    id="validationCustom01" placeholder="Nama Kepala Perpustakaan" value="{{ $data->nama_kepsek }}" required>
                                                                             </div>
                                                                         </div>
                                                                         <div class="mb-2">
                                                                             <div class="form-group">
-                                                                                <label for="validationCustom01">Jenis Kelamin Kepal Perpustakaan</label>
+                                                                                <label for="validationCustom01">Jenis Kelamin Kepala Perpustakaan</label>
                                                                                 <select class="form-control custom-select" name="jenis_kelamin_kepsek">
                                                                                     <option value="l" {{ $data->jenis_kelamin_kepsek == "l" ? 'selected' : '' }}>Laki - Laki</option>
                                                                                     <option value="p" {{ $data->jenis_kelamin_kepsek == "p" ? 'selected' : '' }}>Perempuan</option>
@@ -194,14 +194,14 @@
                                                                         </div>
                                                                         <div class="mb-2">
                                                                             <div class="form-group">
-                                                                                <label for="validationCustom01">Tanggal Lahir Kepal Perpustakaan</label>
+                                                                                <label for="validationCustom01">Tanggal Lahir Kepala Perpustakaan</label>
                                                                                 <input type="date" class="form-control" value="{{ $data->tgl_lahir_kepsek }}" name="tgl_lahir_kepsek"
                                                                                     id="validationCustom01" required>
                                                                             </div>
                                                                         </div>
                                                                         <div class="mb-2">
                                                                             <div class="form-group">
-                                                                                <label for="validationCustom01">Foto Kepal Perpustakaan</label>
+                                                                                <label for="validationCustom01">Foto Kepala Perpustakaan</label>
                                                                                 <input type="file" id="input-file-now" name="foto_kepsek" class="dropify" data-default-file="/foto_kepsek/{{ $data->foto_kepsek }}" />
                                                                             </div>
                                                                         </div>
@@ -211,7 +211,7 @@
                                                                             data-dismiss="modal">Tutup</button>
                                                                         <button class="btn btn-success"
                                                                             type="submit">Perbaharui
-                                                                            Data Kepal Perpustakaan</button>
+                                                                            Data Kepala Perpustakaan</button>
                                                                     </div>
                                                                 </form>
                                                             </div>

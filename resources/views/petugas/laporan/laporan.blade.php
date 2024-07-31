@@ -45,7 +45,7 @@
                                         <label for="input_tags">Pilih Rentan Tanggal Pengembalian Pinjaman untuk
                                             Dicetak</label>
                                         <input class="form-control" type="text" name="daterange"
-                                            value="01/01/2023 - 01/15/2023" />
+                                           />
                                         <p class="text-warning my-1 font-italic">
                                             <i>
                                                 *Mohon bijak dalam memilih rentang waktu , jika waktu tersebut memiliki

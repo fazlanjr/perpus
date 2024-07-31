@@ -4,17 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
             const isExist = document.getElementById("video") || false;
-            if (!isExist) {
-                return;
-            }
+            // if (!isExist) {
+            //     return;
+            // }
             const input = document.getElementById("barcodeinput") || false;
-            if (!input) {
-                return;
-            }
+            // if (!input) {
+            //     return;
+            // }
             const form = document.getElementById("formbarcode") || false;
-            if (!form) {
-                return;
-            }
+            // if (!form) {
+            //     return;
+            // }
             const result = await codeReader.decodeOnceFromVideoDevice(
                 undefined,
                 "video"
@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Barcode detected and processed : [" + result.text + "]",
                 result
             );
-            input.value = result.text;
+            document.getElementById("barcodeinput").value = result.text;
             setTimeout(() => {
-                // form.submit()
+                form.submit()
             }, 500);
         } catch (err) {
             console.error(err);

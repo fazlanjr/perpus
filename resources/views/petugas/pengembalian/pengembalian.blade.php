@@ -19,17 +19,23 @@
                 <section class="hk-sec-wrapper">
                     <div class="row">
                         <div class="col-sm">
-                            <form action="{{ route('pengembalian.scan') }}" method="GET" enctype="multipart/form-data">
+                            <button type="button" class="btn btn-primary mb-5" data-toggle="modal"
+                                data-target="#exampleModal" id="barcodebtn">
+                                Buka Scanner
+                            </button>
+                            <form action="{{ route('pengembalian.scan') }}" method="GET" enctype="multipart/form-data"
+                                id="formbarcode">
                                 @csrf
                                 <div class="form-group">
-                                    <label class="control-label mb-10" for="exampleInputuname_1">Scan Barcode Siswa / Kartu
+                                    <label class="control-label mb-10" for="barcodeinput">Scan Barcode Siswa / Kartu
                                         Anggota Perpus Siswa</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="icon-user"></i></span>
                                         </div>
                                         <input type="text" class="form-control @error('barcode') is-invalid @enderror"
-                                            id="exampleInputuname_1" placeholder="ID Siswa" name="barcode" autofocus>
+                                            placeholder="ID Siswa" name="barcode" autofocus
+                                            id="barcodeinput">
                                         @error('barcode')
                                             <span class="invalid-feedback">{{ $message }}</span>
                                         @enderror
@@ -143,6 +149,27 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Scan Barcode</h5>
+                    <button type="button" class="close closebtn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="scanner-container"><video id="video"></video></div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary closebtn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('css')
@@ -150,9 +177,16 @@
     <link href="/theme/vendors/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
     <link href="/theme/vendors/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet"
         type="text/css" />
+    <style>
+        #video {
+            max-width: 100%;
+        }
+    </style>
 @endsection
 
 @section('js')
+    <script src="/js/@zxing/library/umd/index.min.js"></script>
+    <script src="/js/scanner.js"></script>
     <script>
         window.setTimeout(function() {
             $(".alert").fadeTo(700, 0).slideUp(500, function() {
