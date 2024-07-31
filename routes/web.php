@@ -79,6 +79,11 @@ Route::middleware(['auth', 'user-access:Petugas'])->group(function () {
     Route::post('/cetak',[SiswaPetugasController::class,'saveCardImage'])->name('siswa.card');
     Route::resource('/petugas/denda', DendaPetugasController::class);
 
-    Route::resource('/petugas/kepsek', KepsekPetugasController::class);
+    Route::resource('/petugas/kepalaperpus', KepsekPetugasController::class)->names([
+        'index'=>"kepsek.index",
+        'store'=>'kepsek.store',
+        'destroy'=>'kepsek.destroy',
+        'update'=>'kepsek.update'
+    ]);
 
 });

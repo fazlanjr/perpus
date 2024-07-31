@@ -5,7 +5,7 @@
         <!-- Title -->
         <div class="hk-pg-header">
             <h4 class="hk-pg-title"><span class="pg-title-icon">
-                    <i class="material-icons">school</i></span>Data Kepal Perpustakaan
+                    <i class="material-icons">school</i></span>Data Kepala Perpustakaan
             </h4>
         </div>
 
