@@ -6,17 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
         codeReader = new ZXing.BrowserBarcodeReader();
 
         try {
-            const isExist = document.getElementById("video") || false;
-            // if (!isExist) {
-            //     return;
-            // }
-            const input = document.getElementById("barcodeinput") || false;
-            // if (!input) {
-            //     return;
-            // }
-            const form = document.getElementById("formbarcode") || false;
-            // if (!form) {
-            //     return;
             // }
             const result = await codeReader.decodeOnceFromVideoDevice(
                 undefined,
@@ -26,12 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Barcode detected and processed : [" + result.text + "]",
                 result
             );
+            alert(result)
             document.getElementById("barcodeinput").value = result.text;
             audio.play();
             setTimeout(() => {
                 form.submit();
             }, 500);
         } catch (err) {
+            // alert(err)
             console.error(err);
         }
     }
