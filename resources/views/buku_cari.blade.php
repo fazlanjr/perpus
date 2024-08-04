@@ -1,17 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    <h1 style="color: white">Buku</h1>
+@endsection
 @section('content')
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light"
-        style="background-image: url(/perpus/img-1.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Buku</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="faq-area left-sidebar course-details-area default-padding">
         <div class="container">
             <div class="row">
@@ -87,24 +79,26 @@
                                     <h4>Buku Rekomendasi Untuk Di Baca</h4>
                                 </div>
                                 @foreach ($random as $buku)
-                                <div class="item">
-                                    <div class="content">
-                                        <div class="thumb">
-                                            <a href="#">
-                                                <img src="/foto_buku/{{ $buku->foto_buku }}" alt="Thumb">
-                                            </a>
-                                        </div>
-                                        <div class="info">
-                                            <h4>
-                                                <a href="#">{{ Str::title($buku->nama_buku) }}</a>
-                                            </h4>
-                                            <div class="meta">
-                                                <i class="fas fa-dolly"></i><a href="#">{{ Str::upper($buku->jenis_rak) }}</a><br>
-                                                <i class="fas fa-dolly"></i>Penerbit : <a href="#">{{ Str::upper($buku->penerbit) }}</a>
+                                    <div class="item">
+                                        <div class="content">
+                                            <div class="thumb">
+                                                <a href="#">
+                                                    <img src="/foto_buku/{{ $buku->foto_buku }}" alt="Thumb">
+                                                </a>
+                                            </div>
+                                            <div class="info">
+                                                <h4>
+                                                    <a href="#">{{ Str::title($buku->nama_buku) }}</a>
+                                                </h4>
+                                                <div class="meta">
+                                                    <i class="fas fa-dolly"></i><a
+                                                        href="#">{{ Str::upper($buku->jenis_rak) }}</a><br>
+                                                    <i class="fas fa-dolly"></i>Penerbit : <a
+                                                        href="#">{{ Str::upper($buku->penerbit) }}</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 @endforeach
                             </div>
                             <!-- End Sidebar Item -->

@@ -1,6 +1,8 @@
 @extends('layouts.master')
 
-@section('content')
+@section('title')
+    <h1 style="color: white">Visi & Misi</h1>
+@endsection
 @section('content')
     <div class="banner-area mt-5 p-5 content-top-heading text-normal text-center" style="">
 
@@ -42,5 +44,4 @@
 
 
     </div>
-@endsection
 @endsection

@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Models\Kelas;
 use App\Models\Riwayat;
 use Illuminate\Http\Request;
-// use Barryvdh\DomPDF\PDF;
 use Barryvdh\DomPDF\Facade\Pdf;
 use DateTime;
 
@@ -52,7 +51,7 @@ class LaporanPetugasController extends Controller
         }
         $riwayat = $riwayat->get();
 
-        
+
         function f(string $t): string
         {
             $date  = new DateTime($t);

@@ -1,17 +1,12 @@
 @extends('layouts.master')
-
-@section('content')
-    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light"
-        style="background-image: url(/perpus/img-1.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Buku</h1>
-                </div>
-            </div>
+@section('title')
+    <div class="row">
+        <div class="col-md-12">
+            <h1 style="color:white">Buku</h1>
         </div>
     </div>
-
+@endsection
+@section('content')
     <div class="popular-courses default-padding bottom-less without-carousel">
         <div class="container">
             <div class="row">

@@ -1,15 +1,8 @@
 @extends('layouts.master')
-
+@section('title')
+    <h1 style="color: white">Tata Tertib Peminjaman</h1>
+@endsection
 @section('content')
-<div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url(/perpus/img-1.jpg);">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Tata Tertib Peminjaman</h1>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="faq-area left-sidebar course-details-area default-padding">
     <div class="container">
