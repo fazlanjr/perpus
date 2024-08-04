@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Barcode detected and processed : [" + result.text + "]",
                 result
             );
+            const form = document.getElementById('formbarcode')
             // alert(result)
             document.getElementById("barcodeinput").value = result.text;
             audio.play();
