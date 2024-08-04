@@ -50,7 +50,7 @@
     <header id="home">
 
         <!-- Start Navigation -->
-        <nav class="navbar navbar-default navbar-sticky bootsnav">
+        <nav class="navbar navbar-default navbar-sticky bootsnav" style="z-index: 99999999">
 
             <div class="container">
                 <!-- Start Header Navigation -->
@@ -140,7 +140,8 @@
         <!-- Controls -->
         <a class="left carousel-control" href="#carousel-example-generic" role="button" onclick="prev()"
             style="z-index: 9999999;display:flex;align-items:center;justify-content:center;" data-slide="prev">
-            <span style="display:flex;align-items:center;justify-content:center;font-size:2.5em">< </span>
+            <span style="display:flex;align-items:center;justify-content:center;font-size:2.5em">
+                < </span>
         </a>
         <a class="right carousel-control" href="#carousel-example-generic" role="button" onclick="next()"
             style="z-index: 9999999;display:flex;align-items:center;justify-content:center" data-slide="next">
@@ -179,10 +180,10 @@
         // })
         // console.log(r);
 
-        const next =()=>{
+        const next = () => {
             $('.carousel').carousel('next')
         }
-        const prev = ()=>{
+        const prev = () => {
             $('.carousel').carousel('prev')
 
 
