@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 "Barcode detected and processed : [" + result.text + "]",
                 result
             );
-            alert(result)
+            // alert(result)
             document.getElementById("barcodeinput").value = result.text;
             audio.play();
             setTimeout(() => {
