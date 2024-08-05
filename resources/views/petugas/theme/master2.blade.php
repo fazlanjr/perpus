@@ -18,6 +18,8 @@ License: You must have a valid license purchased only from themeforest to legall
     <link rel="icon" href="/perpus/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/app.css">
     <link href="/theme/dist/css/style2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/sweetalert2/dist/sweetalert2.min.css">
+    <script src="/sweetalert2/dist/sweetalert2.all.min.js"></script>
     @yield('css')
 
     <style>
