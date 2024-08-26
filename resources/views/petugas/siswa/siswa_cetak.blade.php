@@ -16,9 +16,9 @@
                                     <img src="/{{ config('app.logo') }}" height="70" width="70" alt="">
                                 </div>
                                 <div class="col-10">
-                                    <h5 class="text-center" style="color: white">Kartu Anggota Perpustakaan</h5>
+                                    <h5 class="text-center" style="color: white">KARTU ANGGOTA PERPUSTAKAAN</h5>
                                     <h5 class="text-center mt-5" style="color: white">{{ config('app.sekolah') }}</h5>
-                                    <p class="text-center mt-5">{{ config('app.alamat') }}</p>
+        
                                 </div>
                             </div>
                         </div>
@@ -73,6 +73,7 @@
                                     </table>
                                 </div>
                             </div>
+                        
                             <div class="row mt-2">
                                 <div class="col-6">
                                     <span class="barcode">

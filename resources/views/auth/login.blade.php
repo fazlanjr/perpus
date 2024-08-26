@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>SI - Perpustakaan</title>
+    <title>Perpustakaan SMA Negeri 1 Kampar</title>
     <meta name="description" content="A responsive bootstrap 4 admin dashboard template by hencework" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" href="/perpus/logo.png" type="image/x-icon">
+    <link rel="icon" href="logo.png" type="image/x-icon">
 
     <!-- Toggles CSS -->
     <link href="/theme/vendors/jquery-toggles/css/toggles.css" rel="stylesheet" type="text/css">
@@ -25,7 +25,7 @@
 
         <!-- Main Content -->
         <div class="hk-pg-wrapper hk-auth-wrapper"
-            style="background-image: url('/perpus/img-1.jpg');background-size: cover;">
+            style="background-image: url('/perpus/jrr.jpg');background-size: cover;">
 
             <div class="container-fluid">
                 <div class="row">
@@ -45,7 +45,7 @@
                                     @csrf
                                     @method('post')
                                     <h1 class="display-4 text-center mb-10">Sistem Informasi</h1>
-                                    <p class="text-center mb-30">Perpustakaan {{ config('app.sekolah') }}</p>
+                                    <p class="text-center mb-30">Perpustakaan SMA Negeri 1 Kampar</p>
 
                                     <div class="form-group">
                                         <input class="form-control"  placeholder="Nomor Induk Pegawai" type="number"
@@ -60,6 +60,7 @@
                                             onclick="myFunction()">
                                         <label class="custom-control-label font-14" for="same-address">Lihat
                                             Password</label>
+                                           
                                     </div>
                                     <button class="btn btn-success btn-block" type="submit">Login</button>
                                 </form>

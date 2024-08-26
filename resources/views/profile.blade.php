@@ -12,7 +12,7 @@
                     </div>
                     <div class="col-md-6 info">
                         <h5>Profile Perpustakaan</h5>
-                        <h2>Selamat Datang Di Perpustakaan {{ config('app.sekolah') }}</h2>
+                        <h2>Selamat Datang Di Perpustakaan SMA Negeri 1 Kampar</h2>
                         <p>
                             Perpustakaan SMA Negeri 1 Kampar berlokasi di jalan raya Pekanbaru – Bangkinang, km 50,Airtiris
                             Telp. (0762) 21133 Kode Pos. 28461. Perpustakaan ini, berkomitmen menjadi pusat sumber belajar

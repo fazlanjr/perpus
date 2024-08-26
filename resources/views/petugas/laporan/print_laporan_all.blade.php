@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>SI - Perpustakaan</title>
+    <title>Perpustakaan SMA Negeri 1 Kampar</title>
     <meta name="description" content="A responsive bootstrap 4 admin dashboard template by hencework" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" href="/perpus/logo.png" type="image/x-icon">
+    <link rel="icon" href="logo.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,13 +24,13 @@
     </style>
     <table border="0" width="100%">
         <tr>
-            <td width="10%" align="center"> <img src="/{{ config('app.logo') }}" width="80" height="80"
+            <td width="10%" align="center"> <img src="logo.png" width="80" height="80"
                     alt=""></td>
             <td width="90%" align="center">
 
                 <h5>DINAS PENDIDIKAN PEMERINTAH {{ config('app.kota') }}</h5>
                 <h5 style="text-transform: uppercase">{{ config('app.sekolah') }}</h5>
-                <h6 style="text-transform: uppercase">{{ config('app.alamat') }}</h6>
+        
             </td>
         </tr>
     </table>
@@ -43,7 +43,7 @@
         <p>
             <small>
 
-                Rentang Waktu : {{ $batas }}
+                
             </small>
         </p>
     </center>
@@ -86,7 +86,7 @@
     <table>
         <tbody>
             <tr>
-                <td>Kepala Perpustakaan<br><br><br><br>
+                <td>Mengetahui <br> Kepala Perpustakaan<br><br><br><br>
                     @forelse ($kepsek as $kepsek)
                         {{ Str::title($kepsek->nama_kepsek) }} <br>
                         <b><u>NIP : {{ $kepsek->nip_kepsek }}</u></b>
@@ -96,7 +96,10 @@
                 </td>
                 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td>Staff Perpustakaan<br><br><br><br>
+
+                    <td>
+                    Airtiris, {{ \Carbon\Carbon::now()->format('d F Y') }} 
+                        <br> Staff Perpustakaan<br><br><br><br>
                     {{ Str::title(Auth::user()->name) }} <br>
                     <b><u>NIP : {{ Auth::user()->nip }}</u></b>
                 </td>

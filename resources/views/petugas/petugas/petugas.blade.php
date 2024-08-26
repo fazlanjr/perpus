@@ -21,7 +21,7 @@
             <div class="col-xl-12">
                 <section class="hk-sec-wrapper">
                     <h5 class="hk-sec-title">Data Petugas</h5>
-                    <p class="mb-20">Data Petugas Yang Penanggung Jawab Pada Sistem Perpustakaan {{ config("app.sekolah") }}</p>
+                    <p class="mb-20">Data Petugas Yang Penanggung Jawab Pada Sistem Perpustakaan SMA Negeri 1 Kampar</p>
                     <a href="{{ route('petugas.create') }}" class="btn btn-success btn-wth-icon btn-sm mb-20">
                         <span class="icon-label">
                             <span class="material-icons">

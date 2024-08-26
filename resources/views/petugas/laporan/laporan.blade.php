@@ -46,7 +46,7 @@
                                             Dicetak</label>
                                         <input class="form-control" type="text" name="daterange"
                                            />
-                                        <p class="text-warning my-1 font-italic">
+                                        <p class="text-red my-1 font-italic">
                                             <i>
                                                 *Mohon bijak dalam memilih rentang waktu , jika waktu tersebut memiliki
                                                 banyak data dan tidak ada filter kelas, maka akan beresiko memberatkan

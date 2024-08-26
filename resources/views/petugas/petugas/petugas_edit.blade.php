@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <section class="hk-sec-wrapper">
-                    <p class="mb-40">Formulir Pengisian Data Petugas Pendaftaraan Sebagai Petugas Perpustakaan {{ config('app.sekolah') }}</p>
+                    <p class="mb-40">Formulir Pengisian Data Petugas Pendaftaraan Sebagai Petugas Perpustakaan SMA Negeri 1 Kampar</p>
                     <form action="{{ route('petugas.update', $petugas->id) }}" method="post" enctype="multipart/form-data">
                         @csrf
                         @method('put')

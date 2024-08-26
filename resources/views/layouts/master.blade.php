@@ -10,7 +10,7 @@
 
     <!-- ========== Page Title ========== -->
     <link rel="icon" href="/perpus/logo.png" type="image/x-icon">
-    <title>SI - Perpustakaan</title>
+    <title>Perpustakaan SMA Negeri 1 Kampar</title>
 
     <!-- ========== Start Stylesheet ========== -->
     <link href="/dashboard/assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -117,19 +117,19 @@
         </div>
         <div class="carousel-inner relative" role="listbox">
             <div class="item active">
-                <img src="/perpus/1.jpeg" alt="...">
+                <img src="/perpus/jrr.jpg" alt="...">
                 <div class="carousel-caption">
                     ...
                 </div>
             </div>
             <div class="item">
-                <img src="/perpus/2.jpeg" alt="...">
+                <img src="/perpus/jr.jpg" alt="...">
                 <div class="carousel-caption">
                     ...
                 </div>
             </div>
             <div class="item">
-                <img src="/perpus/3.jpeg" alt="...">
+                <img src="/perpus/perpus1.jpg" alt="...">
                 <div class="carousel-caption">
                     ...
                 </div>

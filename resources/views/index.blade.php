@@ -3,7 +3,7 @@
 @section('title')
     <div class="item" style="z-index: 50">
 
-        <h1 style="color:white">Aplikasi Perpustakaan {{ config('app.sekolah') }}</h1>
+        <h1 style="color:white">Aplikasi Perpustakaan SMA Negeri 1 Kampar</h1>
 
         <form action="{{ route('home.cari') }}" method="get" style="display: flex;justify-content:center;align-items:center">
             @csrf

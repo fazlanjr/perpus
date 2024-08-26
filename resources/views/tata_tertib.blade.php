@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    <h1 style="color: white">Tata Tertib Peminjaman</h1>
+    <h1 style="color: white">Tata Tertib Perpustakaan SMA Negeri 1 Kampar</h1>
 @endsection
 @section('content')
 
@@ -22,8 +22,8 @@
                             <div id="ac1" class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <p>
-                                     Tata Terbit Dalam Melakukan Transaksi Peminjaman Buku di {{ config('app.sekolah') }}
-                                     yang harus Di Patuhi Oleh Seluruh Siswa {{ config('app.sekolah') }}
+                                     Tata Terbit Dalam Melakukan Transaksi Peminjaman Buku di SMA Negeri 1 Kampar
+                                     yang harus Di Patuhi Oleh Seluruh Siswa SMA Negeri 1 Kampar
                                    </p>
                                     <ul>
                                         <li>Peminjam Harus Memiliki Kartu Tanda Anggota Perpustakaan</li>
@@ -40,15 +40,15 @@
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#ac2">
-                                        Tata Tertib Pengembalian / Mengembalikan Buku
+                                        Tata Tertib Pengunjung
                                     </a>
                                 </h4>
                             </div>
                             <div id="ac2" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <p>
-                                         Tata Tertib bagi Siswa {{ config('app.sekolah') }} dalam proses Pengembalian Buku di Perpustakaan
-                                         yang wajib di patuhi oleh seluruh siswa / anggota Perpustakaan {{ config('app.sekolah') }}
+                                         Tata Tertib Pengunjung SMA Negeri 1 Kampar
+                                         yang wajib di patuhi oleh seluruh siswa / anggota Perpustakaan SMA Negeri 1 Kampar
                                     </p>
                                     <ul>
                                         <li>Waktu Kunjungan dilaksanakan Setiap Hari Pukul 07:30 s.d 15:30</li>

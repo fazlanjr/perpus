@@ -6,7 +6,7 @@
         <div class=" ps-5">
             <div class="col-xl-12 pa-5">
                 <div class="profile-cover-wrap overlay-wrap">
-                    <div class="profile-cover-img" style="background-image:url('/perpus/img-1.jpg')"></div>
+                    <div class="profile-cover-img" style="background-image:url('/perpus/jrr.jpg')"></div>
                     <div class="bg-overlay bg-trans-dark-60"></div>
                     <div class="container-fluid px-xxl-65 px-xl-20 profile-cover-content py-50">
                         <div class="row">
