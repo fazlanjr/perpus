@@ -1,7 +1,7 @@
 ## clone project
 
 ```
-git clone https://github.com/jefyokta/perpus.git
+git clone https://github.com/fazlanjr/perpus.git
 ```
 ## instal PHP Packages via composer
 
